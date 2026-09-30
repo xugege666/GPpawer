@@ -1,0 +1,29 @@
+{
+  "name": "gppawer-alpha-lab",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run src",
+    "test:e2e": "playwright test",
+    "start": "node scripts/serve-local.mjs --port 5173",
+    "test:local": "node --test scripts/serve-local.test.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0",
+    "@playwright/test": "^1.55.0"
+  }
+}
